@@ -24,6 +24,9 @@
   };
 
   home.packages = with pkgs; [
+    git-annex
+    unzip
+    p7zip
     brightnessctl
     signal-desktop
 
