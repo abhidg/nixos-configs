@@ -84,6 +84,11 @@
   fonts.fontconfig.enable = true;
 
   xsession.enable = true;
+  xsession.pointerCursor = {
+    name = "Vanilla-DMZ-AA";
+    package = pkgs.vanilla-dmz;
+    size = 48;
+  };
   xsession.windowManager.i3.enable = true;
   xsession.windowManager.i3.config = {
     modifier = "Mod4";
