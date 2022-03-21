@@ -38,9 +38,11 @@
     ripgrep
     universal-ctags
 
-    # languages
-    python39
     R
+
+    # python
+    python39
+    black
 
     # viewers
     zathura
