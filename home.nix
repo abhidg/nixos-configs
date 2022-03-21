@@ -69,7 +69,7 @@
 
   programs.rofi = {
     enable = true;
-    font = "monospace 18";
+    font = "monospace 32";
     extraConfig = {
       modi = "window,run,ssh,drun";
     };
