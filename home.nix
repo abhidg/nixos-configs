@@ -61,6 +61,12 @@
 
   programs.fzf.enable = true;
 
+  programs.git = {
+    enable = true;
+    userEmail = "abhishek.dasgupta@cs.ox.ac.uk";
+    userName = "Abhishek Dasgupta";
+  };
+
   programs.rofi = {
     enable = true;
     font = "monospace 18";
