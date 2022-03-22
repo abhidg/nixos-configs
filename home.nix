@@ -51,6 +51,7 @@
     # general
     file
     gnome.nautilus
+    tree
 
     # linters
     python39Packages.flake8
