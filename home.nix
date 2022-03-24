@@ -53,6 +53,9 @@
     gnome.nautilus
     tree
 
+    # transformers
+    jq
+
     # linters
     python39Packages.flake8
   ];
