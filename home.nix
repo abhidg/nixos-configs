@@ -3,7 +3,8 @@
 {
   imports = [
     ./vim.nix
-  ];
+    ./xresources.nix
+    ];
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "abhidg";
@@ -79,8 +80,6 @@
     };
   };
   
-  xresources.properties = import ./xresources.nix;
-
   programs.bash = {
     enable = true;
   };
