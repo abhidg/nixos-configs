@@ -4,6 +4,7 @@
   programs.vim = {
     enable = true;
     settings = {
+      background = "dark";
       mouse = "a";
       backupdir = [ "~/tmp" ];
       expandtab = true;
@@ -27,6 +28,7 @@
       editorconfig-vim
       ale
       vim-gutentags
+      gruvbox
     ];
   };
 
