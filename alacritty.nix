@@ -2,17 +2,10 @@
 
 {
   programs.alacritty.enable = true;
-  programs.alacritty.settings.font.size = 12;
-    # normal = {
-    #   family = "BitstreamVeraSansMono Nerd Font Mono";
-    # };
-    # bold = {
-    #   family = "BitstreamVeraSansMono Nerd Font";
-    #   style = "Bold";
-    # };
-    # size = 12;
-  # };
-
+  programs.alacritty.settings = {
+    font.size = 12;
+    draw_bold_text_with_bright_colors = true;
+  };
   programs.alacritty.settings.colors = {
     primary.background = "0x1d2021";
     primary.foreground = "0xebdbb2";
