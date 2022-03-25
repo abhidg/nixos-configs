@@ -4,6 +4,7 @@
   imports = [
     ./vim.nix
     ./xresources.nix
+    ./alacritty.nix
     ];
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
@@ -98,6 +99,7 @@
   xsession.windowManager.i3.enable = true;
   xsession.windowManager.i3.config = {
     modifier = "Mod4";
+    terminal = "alacritty";
     keybindings = import ./i3-keybindings.nix "Mod4";
   };
 

@@ -1,10 +1,9 @@
 mod:
 {
   "${mod}+w" = "exec firefox";
-  "${mod}+Return" = "exec urxvt";
+  "${mod}+Return" = "exec alacritty";
   "Mod1+space" = "exec rofi -show window";
   "Mod1+Shift+space" = "exec rofi -show drun";
-  "Mod1+Shift+Return" = "exec urxvt";
   "${mod}+h" = "kill";
   "${mod}+Shift+m" = "exec amixer -q sset Master toggle";
   "${mod}+Alt+s" = "exec kill $(pgrep -f shutter); shutter -s";
@@ -65,4 +64,3 @@ mod:
   "XF86MonBrightnessUp" = "exec --no-startup-id brightnessctl set +5%";
   "XF86MonBrightnessDown" = "exec --no-startup-id brightnessctl set 5%-";
 }
-
