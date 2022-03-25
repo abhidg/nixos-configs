@@ -14,7 +14,7 @@
   # };
 
   programs.alacritty.settings.colors = {
-    primary.background = "0x282828";
+    primary.background = "0x1d2021";
     primary.foreground = "0xebdbb2";
 
     normal = {
