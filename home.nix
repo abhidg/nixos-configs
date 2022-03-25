@@ -37,6 +37,7 @@
     # programming
     fd
     ripgrep
+    nerdfonts
     universal-ctags
 
     R
@@ -83,6 +84,8 @@
   programs.bash = {
     enable = true;
   };
+  programs.starship.enable = true;
+  programs.starship.settings.package.disabled = true;
 
   fonts.fontconfig.enable = true;
 
