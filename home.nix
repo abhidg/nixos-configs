@@ -67,6 +67,7 @@
   programs.home-manager.enable = true;
 
   programs.fzf.enable = true;
+  programs.bat.enable = true;
 
   programs.git = {
     enable = true;
