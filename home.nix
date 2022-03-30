@@ -55,6 +55,7 @@
     file
     gnome.nautilus
     tree
+    flameshot
 
     # transformers
     jq
