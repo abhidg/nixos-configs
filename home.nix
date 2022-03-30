@@ -62,6 +62,9 @@
 
     # linters
     python39Packages.flake8
+
+    # research
+    zotero
   ];
 
   # Let Home Manager install and manage itself.
