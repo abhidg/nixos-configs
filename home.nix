@@ -88,7 +88,10 @@
     enable = true;
   };
   programs.starship.enable = true;
-  programs.starship.settings.package.disabled = true;
+  programs.starship.settings = {
+    package.disabled = true;
+    aws.disabled = true;
+  };
 
   fonts.fontconfig.enable = true;
 
