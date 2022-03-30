@@ -56,7 +56,9 @@ mod:
 
   # volume
   "XF86AudioRaiseVolume" = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%";
+  "Home" = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%";
   "XF86AudioLowerVolume" = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%";
+  "Insert" = "exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%";
   "XF86AudioMute" = "exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle";
   "XF86AudioMicMute" = "exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle";
 
