@@ -71,7 +71,10 @@
   programs.home-manager.enable = true;
 
   programs.fzf.enable = true;
-  programs.bat.enable = true;
+  programs.bat = {
+    enable = true;
+    config.theme = "gruvbox-dark";
+  };
 
   programs.git = {
     enable = true;
@@ -81,7 +84,8 @@
 
   programs.rofi = {
     enable = true;
-    font = "monospace 32";
+    theme = "gruvbox-dark";
+    font = "JetBrainsMono Nerd Font Mono 32";
     extraConfig = {
       modi = "window,run,ssh,drun";
     };
