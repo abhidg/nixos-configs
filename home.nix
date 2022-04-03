@@ -30,6 +30,7 @@
     unzip
     p7zip
     brightnessctl
+    playerctl
     signal-desktop
 
     # for pactl
