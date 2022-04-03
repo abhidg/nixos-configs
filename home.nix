@@ -50,6 +50,7 @@
     # viewers
     zathura
     imv
+    mpv
 
     # general
     file
