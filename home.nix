@@ -120,6 +120,17 @@
   services.network-manager-applet.enable = true;
   services.picom.enable = true;
   services.dunst.enable = true;
+  services.dunst.settings = {
+    global = {
+      width = 500;
+      font = "JetBrainsMono Nerd Font Mono 11";
+      frame_color = "#111111";
+    };
+    urgency_normal = {
+      background = "#111111";
+    };
+  };
+
   services.gnome-keyring.enable = true;
   services.redshift = {
     enable = true;
