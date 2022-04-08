@@ -3,7 +3,6 @@
 {
   programs.alacritty.enable = true;
   programs.alacritty.settings = {
-    font.normal.family = "JetBrainsMono Nerd Font Mono";
     font.size = 12;
     draw_bold_text_with_bright_colors = true;
   };

@@ -94,6 +94,17 @@
     };
   };
   
+  home.file.".config/fontconfig/fonts.conf".text = ''
+<match target="pattern">
+  <test name="family" qual="any">
+    <string>monospace</string>
+  </test>
+  <edit binding="strong" mode="prepend" name="family">
+    <string>FiraMono Nerd Font Mono</string>
+  </edit>
+</match>
+  '';
+
   programs.bash = {
     enable = true;
   };
