@@ -88,7 +88,6 @@
   programs.rofi = {
     enable = true;
     theme = "gruvbox-dark";
-    font = "JetBrainsMono Nerd Font Mono 32";
     extraConfig = {
       modi = "window,run,ssh,drun";
     };
@@ -135,7 +134,7 @@
   services.dunst.settings = {
     global = {
       width = 500;
-      font = "JetBrainsMono Nerd Font Mono 11";
+      font = "BitstreamVeraSansMono Nerd Font Mono 11";
       frame_color = "#111111";
     };
     urgency_normal = {
