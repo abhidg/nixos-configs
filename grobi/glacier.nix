@@ -11,7 +11,7 @@
       atomic = true;
       execute_after = [
         "${pkgs.xorg.xrandr}/bin/xrandr --dpi 144"
-        "${pkgs.i3}/bin/i3-msg reload"
+        "${pkgs.i3}/bin/i3-msg restart"
       ];
     }
     {
@@ -22,7 +22,7 @@
       atomic = true;
       execute_after = [
         "${pkgs.xorg.xrandr}/bin/xrandr --dpi 224"
-        "${pkgs.i3}/bin/i3-msg reload"
+        "${pkgs.i3}/bin/i3-msg restart"
       ];
     }
   ];
