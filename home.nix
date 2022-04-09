@@ -41,6 +41,7 @@
     fd
     ripgrep
     nerdfonts
+    liberation_ttf
     universal-ctags
 
     R
