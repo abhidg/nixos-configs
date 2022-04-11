@@ -28,7 +28,6 @@
       editorconfig-vim
       ale
       vim-gutentags
-      gruvbox
     ];
   };
 
