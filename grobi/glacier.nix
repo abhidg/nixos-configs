@@ -16,7 +16,7 @@
     }
     {
       name = "Mobile";
-      outputs_disconnected = [ "DP-2" ];
+      outputs_disconnected = [ "DP-1" ];
       configure_single = "eDP-1";
       primary = true;
       atomic = true;
