@@ -7,29 +7,29 @@
     draw_bold_text_with_bright_colors = true;
   };
   programs.alacritty.settings.colors = {
-    primary.background = "0x1d2021";
-    primary.foreground = "0xebdbb2";
+    primary.background = "0x000000";
+    primary.foreground = "0xffffff";
 
     normal = {
-      black   = "0x282828";
-      red     = "0xcc241d";
-      green   = "0x98971a";
-      yellow  = "0xd79921";
-      blue    = "0x458588";
-      magenta = "0xb16286";
-      cyan    = "0x689d6a";
-      white   = "0xa89984";
+      black   = "0x1a1a1a";
+      red     = "0xff929f";
+      green   = "0x5fc940";
+      yellow  = "0xc5b300";
+      blue    = "0x5fb8ff";
+      magenta = "0xef91df";
+      cyan    = "0x1dc5c3";
+      white   = "0xc4bdaf";
     };
 
     bright = {
-      black   = "0x928374";
-      red     = "0xfb4934";
-      green   = "0xb8bb26";
-      yellow  = "0xfabd2f";
-      blue    = "0x83a598";
-      magenta = "0xd3869b";
-      cyan    = "0x8ec07c";
-      white   = "0xebdbb2";
+      black   = "0x242536";
+      red     = "0xf69d6a";
+      green   = "0x88c400";
+      yellow  = "0xd7ae00";
+      blue    = "0x8cb4f0";
+      magenta = "0xde99f0";
+      cyan    = "0x00ca9a";
+      white   = "0xe0e0e0";
     };
   };
 }
