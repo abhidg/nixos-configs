@@ -27,6 +27,7 @@
   };
 
   home.packages = with pkgs; [
+    act
     git-annex
     unzip
     p7zip
