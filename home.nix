@@ -59,7 +59,10 @@
 
     # general
     file
-    gnome.nautilus
+    libsForQt5.dolphin
+    libsForQt5.breeze-gtk
+    libsForQt5.breeze-icons
+    libsForQt5.breeze-qt5
     tree
     flameshot
 
