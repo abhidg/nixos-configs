@@ -93,7 +93,7 @@
 
   programs.rofi = {
     enable = true;
-    theme = "gruvbox-dark";
+    theme = "Monokai";
     extraConfig = {
       modi = "window,run,ssh,drun";
     };
