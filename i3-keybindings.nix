@@ -11,7 +11,7 @@ mod:
   "${mod}+grave" = "scratchpad show";
   "${mod}+j" = "focus left";
   "${mod}+k" = "focus down";
-  "${mod}+l" = "focus up";
+  "${mod}+l" = "exec i3lock -c 111111";
   "${mod}+semicolon" = "focus right";
   "${mod}+Left" = "focus left";
   "${mod}+Down" = "focus down";
