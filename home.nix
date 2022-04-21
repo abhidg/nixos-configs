@@ -27,6 +27,7 @@
   };
 
   home.packages = with pkgs; [
+    niv
     act
     git-annex
     unzip
