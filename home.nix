@@ -24,6 +24,7 @@
   };
 
   home.packages = with pkgs; [
+    gh
     niv
     unzip
     p7zip
@@ -45,6 +46,8 @@
 
     # linters
     python310Packages.flake8
+    python310
+    black
   ];
 
   # Let Home Manager install and manage itself.
@@ -62,9 +65,6 @@
     userName = "Abhishek Dasgupta";
   };
 
-  programs.bash = {
-    enable = true;
-  };
   programs.starship.enable = true;
   programs.starship.settings = {
     package.disabled = true;
