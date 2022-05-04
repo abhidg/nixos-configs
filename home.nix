@@ -63,6 +63,10 @@
     enable = true;
     userEmail = "abhishek.dasgupta@cs.ox.ac.uk";
     userName = "Abhishek Dasgupta";
+
+    extraConfig = {
+      init.defaultBranch = "main";
+    };
   };
 
   programs.starship.enable = true;
