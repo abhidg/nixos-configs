@@ -17,13 +17,14 @@
   # You can update Home Manager without changing this value. See
   # the Home Manager release notes for a list of state version
   # changes in each release.
-  home.stateVersion = "22.05";
+  home.stateVersion = "23.05";
 
   home.sessionVariables = {
     EDITOR = "vim";
   };
 
   home.packages = with pkgs; [
+    mr
     gh
     niv
     unzip
@@ -35,6 +36,7 @@
     universal-ctags
 
     python310
+    python310Packages.pip
     black
 
     # general
@@ -46,22 +48,19 @@
 
     # linters
     python310Packages.flake8
-    python310
     black
   ];
 
   # Let Home Manager install and manage itself.
+  programs.bash.enable = true;
   programs.home-manager.enable = true;
 
   programs.fzf.enable = true;
-  programs.bat = {
-    enable = true;
-    config.theme = "gruvbox-dark";
-  };
+  programs.bat.enable = true;
 
   programs.git = {
     enable = true;
-    userEmail = "abhishek.dasgupta@cs.ox.ac.uk";
+    userEmail = "abhishek.dasgupta@dtc.ox.ac.uk";
     userName = "Abhishek Dasgupta";
 
     extraConfig = {
