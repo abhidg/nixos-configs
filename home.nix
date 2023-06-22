@@ -29,15 +29,14 @@
     niv
     unzip
     p7zip
+    terraform
+    awscli2
+    xsv
 
     # programming
     fd
     ripgrep
     universal-ctags
-
-    python310
-    python310Packages.pip
-    black
 
     # general
     file
@@ -45,10 +44,6 @@
 
     # transformers
     jq
-
-    # linters
-    python310Packages.flake8
-    black
   ];
 
   # Let Home Manager install and manage itself.
