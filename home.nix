@@ -1,5 +1,8 @@
 { config, pkgs, ... }:
 
+let
+  inherit (pkgs) stdenv;
+in
 {
   imports = [
     ./vim.nix
@@ -7,7 +10,7 @@
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "abhidg";
-  home.homeDirectory = "/home/abhidg";
+  home.homeDirectory = if stdenv.isDarwin then "/Users/abhidg" else "/home/abhidg";
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
@@ -47,7 +50,7 @@
   ];
 
   # Let Home Manager install and manage itself.
-  programs.bash.enable = true;
+  programs.zsh.enable = true;
   programs.home-manager.enable = true;
 
   programs.fzf.enable = true;
