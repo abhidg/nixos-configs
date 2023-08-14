@@ -1,5 +1,8 @@
 { config, pkgs, ... }:
 
+let
+  plugins = pkgs.vimPlugins // pkgs.callPackage ./vim-plugins.nix {};
+in
 {
   programs.vim = {
     enable = true;
@@ -15,7 +18,7 @@
       smartcase = true;
       tabstop = 4;
     };
-    plugins = with pkgs.vimPlugins; [
+    plugins = with plugins; [
       vim-pandoc
       vim-pandoc-syntax
       vim-polyglot
@@ -27,6 +30,7 @@
       editorconfig-vim
       ale
       vim-gutentags
+      paige
     ];
   };
 
@@ -70,7 +74,8 @@ set autochdir
 au FileType crontab set nobackup nowritebackup
 " How things look.
 " Syntax colors.
-highlight Todo ctermbg=Red ctermfg=Yellow
+colorscheme paige
+
 " Set up the status line so it's colored and always on. Very jedish.
 set laststatus=2
 set number
