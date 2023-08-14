@@ -50,7 +50,8 @@ in
   ];
 
   # Let Home Manager install and manage itself.
-  programs.zsh.enable = true;
+  programs.zsh.enable = stdenv.isDarwin;
+  programs.bash.enable = !stdenv.isDarwin;
   programs.home-manager.enable = true;
 
   programs.fzf.enable = true;
