@@ -53,6 +53,9 @@ in
 
   # Let Home Manager install and manage itself.
   programs.zsh.enable = stdenv.isDarwin;
+  programs.zsh.initExtra = ''
+eval "$(/Users/abhidg/mambaforge/bin/conda shell.zsh hook)"
+'';
   programs.bash.enable = !stdenv.isDarwin;
   programs.home-manager.enable = true;
 
