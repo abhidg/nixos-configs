@@ -24,6 +24,8 @@ in
 
   home.sessionVariables = {
     EDITOR = "vim";
+    # Needed to disable fork() restrictions when running Python on macOS
+    OBJC_DISABLE_INITIALIZE_FORK_SAFETY = "YES";
   };
 
   home.packages = with pkgs; [
