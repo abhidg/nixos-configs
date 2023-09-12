@@ -55,6 +55,7 @@ in
   programs.zsh.enable = stdenv.isDarwin;
   programs.zsh.initExtra = ''
 eval "$(/Users/abhidg/mambaforge/bin/conda shell.zsh hook)"
+. /Users/abhidg/mambaforge/etc/profile.d/mamba.sh
 '';
   programs.bash.enable = !stdenv.isDarwin;
   programs.home-manager.enable = true;
